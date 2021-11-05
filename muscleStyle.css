@@ -1,12 +1,50 @@
 *{
-    background-color: black;
     margin: 0px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
     
 }
 .navbar{
-    color: rgb(3, 158, 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+    background-color: lightgreen;
+    position: cover;
+    
+}
+.logo{
+    background-color: lightgreen;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+} 
+.navbar h1{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18cm;
+    
+}
+.navbar ul {
+   display: flex;
+   margin-right: 40px;
+    list-style: none; 
+    
+}
+.navbar li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    background-color: lightgreen;
+
 }
 a:hover{
-    color: rgb(1, 75, 1);
+    color: white;
 }
+
