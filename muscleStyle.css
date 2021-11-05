@@ -2,34 +2,56 @@
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
+}
+header{
+  display: flex;
+  height: 90px;
+  width: 100%;
+  background-color: lightgreen;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 998;
+  top: 0px;
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 5px;
     position: sticky;
     background-color: lightgreen;
-    position: cover;
+    position: sticky;
+    
     
 }
 .logo{
     background-color: lightgreen;
+    margin-left: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     
+}
+.div-logo{
+  margin-right: 60px;
+  height: 90px;
+  width: 50px;
+  display: flex;
+  padding: 10px;
+}
+.logo-text{
+    color: black;
+   align-items: flex-end;
+   margin-top: 25px;
 }
 a{
     text-decoration: none;
     color: black;
     
 } 
-.navbar h1{
-    color: black;
-    justify-content: center;
-    align-items: center;
-    margin-right: 18cm;
-    
-}
 .navbar ul {
    display: flex;
    margin-right: 40px;
@@ -42,9 +64,22 @@ a{
     align-items: center;
     margin-left: 15px;
     background-color: lightgreen;
+    font-size: 20px;
 
 }
 a:hover{
     color: white;
+}
+#hero-section{
+   width: 100%;
+   position: relative;
+
+}
+
+
+#hero-section img{
+    width: 100%;
+    height: calc(70vh - 90px);
+    object-fit: fill;
 }
 
