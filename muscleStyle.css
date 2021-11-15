@@ -23,7 +23,7 @@ header{
     padding: 5px;
     position: sticky;
     background-color: lightgreen;
-    position: sticky;
+    
     
     
 }
@@ -47,7 +47,7 @@ header{
    align-items: flex-end;
    margin-top: 25px;
 }
-a{
+.navbar a{
     text-decoration: none;
     color: black;
     
@@ -67,19 +67,138 @@ a{
     font-size: 20px;
 
 }
-a:hover{
+.navbar a:hover{
     color: white;
 }
 #hero-section{
    width: 100%;
    position: relative;
+   background-color: black;
 
 }
-
 
 #hero-section img{
     width: 100%;
     height: calc(70vh - 90px);
     object-fit: fill;
 }
+.services-section-color{
+    background-color: black;
+}
 
+.services-section {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+  }
+
+  .services-section-text-wrapper {
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 7px solid darkgreen;
+    padding: 50px;
+  }
+  .services-section-text-wrapper h1 {
+  color: darkgreen;
+  font-size: 50px;
+  border-bottom: 3px solid lightgreen;
+}
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    place-items: center;
+    width: 100%;
+    padding: 0px 30px;
+    background-color: black;
+  }
+  .service-card {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px 30px;
+    margin-top: 30px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-card h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(241, 108, 31);
+    padding-bottom: 15px;
+  }
+  .service-card-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./Media/alonso-reyes-0HlI76m4jxU-unsplash.jpg);
+    background-size: cover;
+  }
+  
+  .service-card-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./Media/victor-freitas-qZ-U9z4TQ6A-unsplash.jpg);
+    background-size: cover;
+  }
+  
+  .service-card-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./Media/joseph-greve-Tivp5fYe4Ng-unsplash\ \(1\).jpg);
+    background-size: cover;
+  }
+  .service-card img{}
+  .service-card-text-container {
+    height: 180%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0px 15px;
+    padding-bottom: 10px;
+    padding-top: 350px;
+    text-align: center;
+    transition-duration: 0.5s;
+    overflow: auto;
+  }
+  
+  .service-card-text-container:hover {
+    transform: translateY(-45%);
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 15px;
+    border-top: 7px solid darkgreen;
+    
+  }
+  footer a {
+    color: lightgreen;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+  footer a:hover {
+    color: white;
+  }
