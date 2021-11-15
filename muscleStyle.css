@@ -3,7 +3,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
 }
 header{
   display: flex;
@@ -23,9 +22,6 @@ header{
     padding: 5px;
     position: sticky;
     background-color: lightgreen;
-    
-    
-    
 }
 .logo{
     background-color: lightgreen;
@@ -33,7 +29,6 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    
 }
 .div-logo{
   margin-right: 60px;
@@ -50,13 +45,11 @@ header{
 .navbar a{
     text-decoration: none;
     color: black;
-    
 } 
 .navbar ul {
    display: flex;
    margin-right: 40px;
-    list-style: none; 
-    
+    list-style: none;  
 }
 .navbar li{
     display: flex;
@@ -65,7 +58,6 @@ header{
     margin-left: 15px;
     background-color: lightgreen;
     font-size: 20px;
-
 }
 .navbar a:hover{
     color: white;
@@ -73,125 +65,145 @@ header{
 #hero-section{
    width: 100%;
    position: relative;
-   background-color: black;
-
 }
 
 #hero-section img{
     width: 100%;
-    height: calc(70vh - 90px);
+    height: calc(100vh - 90px);
     object-fit: fill;
-}
-.services-section-color{
-    background-color: black;
-}
-
-.services-section {
-    width: 100%;
-    min-height: 500px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     
-  }
-
-  .services-section-text-wrapper {
-    background-color: black;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    border-bottom: 7px solid darkgreen;
-    padding: 50px;
-  }
-  .services-section-text-wrapper h1 {
-  color: darkgreen;
-  font-size: 50px;
-  border-bottom: 3px solid lightgreen;
 }
-  
-  .services-container {
-    display: grid;
-    grid-template-columns: 50% 50% ;
-    place-items: center;
+#hero-section-2 img{
+  width: 100%;
+    height: calc(100vh - 90px);
+    object-fit: cover;
+}
+.aside-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 50vh;
+}
+.aside-helper, 
+.aside-text-wrapper,
+.aside-helper-x{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+.aside-helper img{
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
+  border: 3px solid lightgreen;
+  margin-right: 27px;
+  margin-top: 80px;
+}
+.aside-helper-x {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
+  border: 3px solid lightgreen;
+  margin-right: 27px;
+  margin-top: 80px;
+  background: url(./Media/lyfe-fuel-phY30gaxqS8-unsplash.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  margin-left: 8.5cm;
+ 
+}
+.aside-text-wrapper h1{
+  font-size: 37px;
+  border-bottom: 2px solid lightgreen;
+  margin-bottom: 20px;
+ 
+}
+.aside-text-wrapper p{
+  margin-right: 25px;
+  line-height: 25px;
+}
+.aside-text-wrapper article{
+  margin-top: 70px;
+}
+
+  .serivce-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 0px 30px;
-    background-color: black;
   }
-  .service-card {
+  
+  .service-card{
     width: 300px;
-    height: 400px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    margin: 20px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16) 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .service-card a{
+    text-decoration: none;
+    color: black;
+  }
+  .service-card a:hover{
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px 30px;
-    margin-top: 30px;
-    transition-duration: 0.5s;
-    overflow: hidden;
-    position: relative;
+    border: 2px solid darkgreen;
+    background-color: darkgreen;
+    border-radius: 5px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .service-card-header{
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
     display: flex;
     justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .service-card p{
+    padding: 10px;
+  }
+  
+  #about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+  }
+  #about-section h2{
+    font-size: 35px;
+  }
+  .about-section-icons-wrapper{
+    margin-top: 20px;
+  }
+  .about-section-icons-wrapper i{
+    margin: 0 10px;
+    font-size: 25px;
+    transition: 0.5s;
     cursor: pointer;
-    
   }
-  
-  .service-card:hover {
-    transform: scale(1.05);
+  .about-section-icons-wrapper a{
+    color: black;
   }
-  
-  .service-card h2 {
-    margin-bottom: 20px;
-    border-bottom: 2px solid rgb(241, 108, 31);
-    padding-bottom: 15px;
-  }
-  .service-card-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./Media/alonso-reyes-0HlI76m4jxU-unsplash.jpg);
-    background-size: cover;
-  }
-  
-  .service-card-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./Media/victor-freitas-qZ-U9z4TQ6A-unsplash.jpg);
-    background-size: cover;
-  }
-  
-  .service-card-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./Media/joseph-greve-Tivp5fYe4Ng-unsplash\ \(1\).jpg);
-    background-size: cover;
-  }
-  .service-card img{}
-  .service-card-text-container {
-    height: 180%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    padding: 0px 15px;
-    padding-bottom: 10px;
-    padding-top: 350px;
-    text-align: center;
-    transition-duration: 0.5s;
-    overflow: auto;
-  }
-  
-  .service-card-text-container:hover {
-    transform: translateY(-45%);
+  .about-section-icons-wrapper i:hover{
+    color: darkgreen;
   }
   footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: darkgreen;
     padding: 15px;
-    border-top: 7px solid darkgreen;
-    
+    border-top: 7px solid lightgreen;   
   }
   footer a {
-    color: lightgreen;
+    color: black;
     margin: 10px;
     text-decoration: none;
     font-size: 18px;
@@ -200,5 +212,5 @@ header{
 }
 
   footer a:hover {
-    color: white;
+    color: lightgreen;
   }
